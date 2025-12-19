@@ -1,0 +1,186 @@
+archetype (adl_version=1.4; uid=67d3f84a-aa88-458d-b98e-f61d596f6479)
+	openEHR-EHR-CLUSTER.encounter_identifier.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+		["pt"] = <
+			language = <[ISO_639-1::pt]>
+			author = <
+			>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			author = <
+			>
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			author = <
+			>
+		>
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			author = <
+			>
+		>
+		["tr"] = <
+			language = <[ISO_639-1::tr]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2025-11-25">
+		["name"] = <"Johannes Schmidt">
+		["organisation"] = <"Better">
+		["email"] = <"johannes.schmidt@better.care">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
+		["pt"] = <
+			language = <[ISO_639-1::pt]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			copyright = <"© openEHR Foundation">
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			copyright = <"© openEHR Foundation">
+		>
+		["tr"] = <
+			language = <[ISO_639-1::tr]>
+			copyright = <"© openEHR Foundation">
+		>
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"b5af9c7cf42e2fce51baa4e3c1b0cf72">
+		["build_uid"] = <"d2c5a441-93d9-337a-b9c2-49cdcb71fc60">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Encounter_identifier
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Encounter identifier
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Encounter_identifier">
+					description = <"encounter_identifier for the purpose to link openEHR compositions to the corresponding Encounter represented in FHIR.">
+				>
+				["at0001"] = <
+					text = <"Encounter identifier">
+					description = <"">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Encounter_identifier (en)">
+					description = <"*encounter_identifier for the purpose to link openEHR compositions to the corresponding Encounter represented in FHIR. (en)">
+				>
+				["at0001"] = <
+					text = <"*Encounter identifier (en)">
+					description = <"">
+				>
+			>
+		>
+		["fr"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Encounter_identifier (en)">
+					description = <"*encounter_identifier for the purpose to link openEHR compositions to the corresponding Encounter represented in FHIR. (en)">
+				>
+				["at0001"] = <
+					text = <"*Encounter identifier (en)">
+					description = <"">
+				>
+			>
+		>
+		["it"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Encounter_identifier (en)">
+					description = <"*encounter_identifier for the purpose to link openEHR compositions to the corresponding Encounter represented in FHIR. (en)">
+				>
+				["at0001"] = <
+					text = <"*Encounter identifier (en)">
+					description = <"">
+				>
+			>
+		>
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Encounter_identifier (en)">
+					description = <"*encounter_identifier for the purpose to link openEHR compositions to the corresponding Encounter represented in FHIR. (en)">
+				>
+				["at0001"] = <
+					text = <"*Encounter identifier (en)">
+					description = <"">
+				>
+			>
+		>
+		["pt"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Encounter_identifier (en)">
+					description = <"*encounter_identifier for the purpose to link openEHR compositions to the corresponding Encounter represented in FHIR. (en)">
+				>
+				["at0001"] = <
+					text = <"*Encounter identifier (en)">
+					description = <"">
+				>
+			>
+		>
+		["tr"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Encounter_identifier (en)">
+					description = <"*encounter_identifier for the purpose to link openEHR compositions to the corresponding Encounter represented in FHIR. (en)">
+				>
+				["at0001"] = <
+					text = <"*Encounter identifier (en)">
+					description = <"">
+				>
+			>
+		>
+	>
