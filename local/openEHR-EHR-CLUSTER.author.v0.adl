@@ -1,0 +1,241 @@
+archetype (adl_version=1.4; uid=484a1ecf-6c77-4834-9209-ac4aee81b522)
+	openEHR-EHR-CLUSTER.author.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+		["fi"] = <
+			language = <[ISO_639-1::fi]>
+			author = <
+			>
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2025-04-17">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["fi"] = <
+			language = <[ISO_639-1::fi]>
+			copyright = <"© openEHR Foundation">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"e1a3ab4024cfb7e1ddb070c581f6b351">
+		["build_uid"] = <"a4916c6a-7117-3cf9-b38a-59d41324a6ab">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Author
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- AuthorId
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- AuthorName
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- AuthorRole
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Title
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Profession
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Author">
+					description = <"Author">
+				>
+				["at0005"] = <
+					text = <"AuthorId">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"AuthorName">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"AuthorRole">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Title">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Profession">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Författare">
+					description = <"*Author (en)">
+				>
+				["at0005"] = <
+					text = <"FörfattarID">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"FörfattarNamn">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"FörfattarRoll">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Titel">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Yrke">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Forfatter">
+					description = <"*Author (en)">
+				>
+				["at0005"] = <
+					text = <"ForfatterID">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"ForfatterNavn">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"ForfatterRolle">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Tittel">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Yrke">
+					description = <"">
+				>
+			>
+		>
+		["fi"] = <
+			items = <
+				["at0000"] = <
+					text = <"Tekijä">
+					description = <"*Author (en)">
+				>
+				["at0005"] = <
+					text = <"TekijäID">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"TekijäNimi">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"TekijäRooli">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Nimike">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Ammatti">
+					description = <"">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Author (en)">
+					description = <"*Author (en)">
+				>
+				["at0005"] = <
+					text = <"*AuthorId (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*AuthorName (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*AuthorRole (en)">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"*Title (en)">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"*Profession (en)">
+					description = <"">
+				>
+			>
+		>
+	>
